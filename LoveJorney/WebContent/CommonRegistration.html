@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resister YourSelf</title>
+<link rel="stylesheet" type="text/css" href="CSS/commonRegistration.css" />
+<script src="JS/jquery-1.9.1.js"></script>
+<script src="JS/jquery-ui-1.10.3.custom.js"></script>
+<link rel="stylesheet" href="CSS/jquery-ui.tabs.css" />
+<link rel="stylesheet" href="CSS/demos.css" />
+</head>
+<script>
+	$(function() {
+		$("#tabs").tabs();
+		// fix the classes
+		$(".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *")
+				.removeClass("ui-corner-all ui-corner-top").addClass(
+						"ui-corner-bottom");
+		// move the nav to the bottom
+		$(".tabs-bottom .ui-tabs-nav").appendTo(".tabs-bottom");
+	});
+</script>
+<style type="text/css">
+#tabs {
+	border: none;
+}
+
+#tabs .ui-widget-header {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #c0c0c0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+#tabs .ui-tabs-nav .ui-state-active {
+	background: transparent url(Images/uiTabsArrow.png) no-repeat bottom
+		center !important;
+	border: none;
+	padding-bottom: 11px;
+}
+
+#tabs.ui-tabs-nav .ui-state-default a {
+	color: #c0c0c0;
+}
+
+#tabs .ui-tabs-nav .ui-state-active a {
+	color: #1a75bc;
+	font-weight: bold;
+}
+/* force a height so the tabs don't jump as content height changes */
+#tabs .tabs-spacer {
+	float: left;
+	height: 200px;
+}
+
+.tabs-bottom .ui-tabs-nav {
+	clear: left;
+	padding: 0 .2em .2em .2em;
+}
+
+.tabs-bottom .ui-tabs-nav li {
+	top: auto;
+	bottom: 0;
+	margin: 0 .2em 1px 0;
+	border-bottom: auto;
+	border-top: 0;
+}
+
+.tabs-bottom .ui-tabs-nav li.ui-tabs-active {
+	margin-top: -1px;
+	padding-top: 1px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	width: 24.3%;
+	text-align: center;
+	padding-bottom: 6px;
+	font-size: 13px;
+	padding-top: 3px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: none;
+	outline: none;
+	border: none;
+}
+</style>
+<body>
+	<div class="sky">
+
+		<div class="clouds_one"></div>
+
+		<div class="clouds_two"></div>
+
+		<div class="clouds_three"></div>
+		<div id="content">
+			<div style="width: 650px;">
+
+				<div id="tabs" class="tabs-bottom">
+
+					<ul>
+						<li><a href="#tabs-1" >Agent</a></li>
+						<li><a href="#tabs-2" >User</a></li>
+						<li><a href="#tabs-3" >Employee</a></li>
+						<li><a href="#tabs-4" >Corporate</a></li>
+					</ul>
+					<div class="tabs-spacer"></div>
+					<div id="tabs-1">
+						<div class="loginArea">
+							<div class="banner">
+								<h2 class="bannerText">Agent Login</h2>
+							</div>
+							<div class="bannerEdge"></div>
+							<form>
+							<div style="margin-top:25%;margin-left:10%;">
+							<div>
+							<label for="user_name" class="labelText">UserName</label>
+ 							<input type="text" value="" name="username" id="userId" class="inputText"/>
+							</div>
+							<div>
+							<label for="password" class="labelText">Password</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+							
+							<div style="margin-left:9%;">
+ 		                   <ul>
+ 		                   <li style="list-style-type:none;display:inline;float:left; "><input type="submit" value="sign-in" class="subButtn"/></li>
+ 		                   </ul>
+ 		                   <ul>
+ 		                   <li style="list-style-type:none;display:inline;float:left;font-weight: bold;margin-top:4%;padding:4px;">|</li>
+ 		                   <li style="list-style-type:none;display:inline;float:left;font-weight: bold;margin-top:5%;"><a href="#">Forgot Password</a></li>
+ 		                   
+ 		                   </ul>
+ 		                    </div>
+ 		                    </div>
+ 		                    </form>
+						</div>
+					</div>
+						<div id="tabs-2">
+							<div class="loginArea">
+							<div class="banner">
+								<h2 class="bannerText">User Login</h2>
+							</div>
+							<div class="bannerEdge"></div>
+						</div>
+						</div>
+						<div id="tabs-3">
+							<div class="loginArea">
+							<div class="banner">
+								<h2 class="bannerText">Employee Login</h2>
+							</div>
+							<div class="bannerEdge"></div>
+						</div>
+						</div>
+						<div id="tabs-4">
+							<div class="loginArea">
+							<div class="banner">
+								<h2 class="bannerText">Corporate Login</h2>
+							</div>
+							<div class="bannerEdge"></div>
+						</div>
+
+						</div>
+
+
+					
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

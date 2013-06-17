@@ -1,4 +1,4 @@
-/*Ravindra */
+/* Css code by Ravindra */
 
 @CHARSET "ISO-8859-1";
 html, body, div, span, applet, object, iframe,
@@ -51,7 +51,7 @@ li{
 }
 
 #wrapper- { width: 950px; margin: 0 auto;}
-#mainContainer{width: 950px;float:left;padding:0 10px;float:left;background-color:#FFFFFF;box-shadow:3px 6px 8px #888888}
+#mainContainer{width: 950px;float:left;padding:0 10px;float:left;background-color:#FFFFFF;box-shadow:3px 6px 8px #888888;-moz-box-shadow:3px 6px 8px #888888;-webkit-box-shadow:3px 6px 8px #888888;}
 #header-{ float: left; width: 940px; margin:5px; display: block; clear: both; }
 #imageSelection{ float: left; width: 940px; margin:5px; display: block; clear: both; }
 #footer-{ float: left; width: 940px; margin:5px; display: block; clear: both; }
@@ -60,7 +60,8 @@ li{
 #sidebar-right- { float: left; width: 300px; height: auto; }
 #content- { float: left; width: 330px; height: auto; }
 .radioInput{
-	
+  -moz-box-shadow:    1px 2px 3px #D5D3D3;
+  -webkit-box-shadow: 1px 2px 3px #D5D3D3;
 	box-shadow:1px 2px 3px #D5D3D3;
 	color:#6D6D6D;
 	font-size:11px;
@@ -264,6 +265,8 @@ h1{
 	background-color:#1a75bc;
 	border:0 none;
 	outline:none;
+	-moz-box-shadow:1px 2px 3px #D5D3D3;
+  -webkit-box-shadow: 1px 2px 3px #D5D3D3;
 	box-shadow:1px 2px 3px #D5D3D3;
 	color:#FFFFFF;
 	cursor:pointer;
@@ -344,3 +347,34 @@ h1{
 	border-top-width:1px;
 	border-top-style:dotted;
 }
+#specialOffers{
+	float:left;
+	width:198px;
+	margin:5px;
+	
+	
+}
+.hotelOfferInfo{
+	float:left;
+	width:198px;
+	margin:5px;
+	border:1px solid #1a75bc;
+	border-top-left-radius:4px;border-top-right-radius:4px;
+}
+.resortInfo{
+	float:right;
+	width:198px;
+	margin:5px;
+}
+.hotelBook{
+	float:left;
+	height:60px;
+	padding:5px 0 5px 4px;
+	width:189px;
+	}
+.details{
+	float:left;
+	font-size:13px;
+	margin:0 0 7px;
+	width:115px;
+}	
