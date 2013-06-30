@@ -269,13 +269,14 @@ html,body {
      font-weight:bold;
      margin-right:10px;
      padding-top:7px;
-     text-align:right;
+     text-align:left;
      width:70px; 
    }
    .inputText{
      font:16px 'Lucida Grande',arial,sans-serif;
      height:20px;
      margin-bottom:15px;
+     margin-left:15px;
      padding:3px;
      width:200px;
      outline:none;

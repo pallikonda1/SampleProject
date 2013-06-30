@@ -20,6 +20,13 @@
 		$(".tabs-bottom .ui-tabs-nav").appendTo(".tabs-bottom");
 		
 	});
+ function showRegPage(){
+	 var commonArea = document.getElementById("commonArea");
+	 var agentRegistration = document.getElementById("agentRegistration");
+	 agentRegistration.style.display = "block";
+	 commonArea.style.display = "none";
+ }	
+	
 </script>
 <style type="text/css">
 #tabs {
@@ -109,7 +116,7 @@
 					</ul>
 					<div class="tabs-spacer"></div>
 					<div id="tabs-1">
-						<div class="loginArea">
+						<div class="loginArea" id="commonArea">
 							<div class="banner">
 								<h2 class="bannerText" id="headerTitle">Agent Login</h2>
 							</div>
@@ -135,15 +142,63 @@
  		                    <div style="margin-top:15%;padding:5px;">
  		                    <a href="#" class="a-btn" style="text-decoration:none;width:152px;margin-left:-24px;">
 								    <span class="a-btn-text" style="color:#FFFFFF;">New User</span>
-								    <span class="a-btn-slide-text">Register now</span>
+								    <span class="a-btn-slide-text" onclick="showRegPage()">Register now</span>
 								    <span class="a-btn-icon-right"><span></span></span>
 								</a>
  		                    </div>
- 		                    
+ 		                    </div>
+ 		                    </form>
+						</div>
+						
+		<!-- added today -->				
+						<div class="loginArea" style="display:none;" id="agentRegistration">
+							<div class="banner">
+								<h2 class="bannerText" id="headerTitle">Agent Registration</h2>
+							</div>
+							<div class="bannerEdge"></div>
+							<form>
+							<div style="margin-top:25%;margin-left:10%;">
+							<div>
+							<label for="user_name" class="labelText">Name</label>
+ 							<input type="text" value="" name="username" id="userId" class="inputText"/>
+							</div>
+							<div>
+							<label for="password" class="labelText">Email ID</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+							<div>
+							<label for="password" class="labelText">Organization</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+ 		                    <div>
+							<label for="password" class="labelText">Mobile No</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+ 		                    <div>
+							<label for="password" class="labelText">City</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+ 		                    <div>
+							<label for="password" class="labelText">District</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+ 		                    <div>
+							<label for="password" class="labelText">State</label>
+ 		                    <input type="password" value="" name="password" id="passId" class="inputText"/></div>
+ 		                    <div>
+							<label for="password" class="labelText">Comments</label>
+ 		                    <textarea rows="4" cols="24" style="resize:none;margin-left:15px;" ></textarea></div>
+							<div style="margin-left:10%;">
+ 		                   <ul>
+ 		                   <li style="list-style-type:none;display:inline;float:left; "><input type="submit" value="Sign in" class="subButtn"/></li>
+ 		                   </ul>
+ 		                   <ul>
+ 		                   <li style="list-style-type:none;display:inline;"><a class="forgotPwd" href="#">Forgot Password</a></li>
+ 		                  </ul>
+ 		                    </div>
  		                    
  		                    </div>
  		                    </form>
 						</div>
+	    <!-- added today -->					
+						
+						
+						
 					</div>
 						<div id="tabs-2">
 							<div class="loginArea">
