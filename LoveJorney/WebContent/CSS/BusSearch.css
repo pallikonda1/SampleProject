@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+
+.dfltSrchInfo{
+	border-top:1px dotted #1a75bc;
+}
+.dfltSrchInfo span {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	margin:36px;
+}
+
+
+.mdfyButton{
+  background-color:#CCCCCC;
+  border-radius: 15px;
+  -moz-border-radius: 9px;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-family: Arial, sans-serif, Helvetica;
+  font-size: 14px;
+  text-align: center;
+  color:#000000;
+  border: none;
+  outline: none;
+  margin: 11px 4px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom:3px;
+}
+.busText{
+	text-align:left;padding-left:3px;
+	font-family: Arial, sans-serif, Helvetica;
+  font-size: 12px;
+  width:195px;
+}
+.searchButton{
+	background-color:#1a75bc;
+	-moz-box-shadow:3px 6px 8px #888888;
+  -webkit-box-shadow:3px 6px 8px #888888;
+	box-shadow:3px 6px 8px #888888;
+  border-radius: 15px;
+  -moz-border-radius: 9px;
+  cursor: pointer;
+  width:100px;
+  height: 30px;
+  line-height: 30px;
+  font-family: Arial, sans-serif, Helvetica;
+  font-size: 14px;
+  font-weight:bold;
+  text-align: center;
+  color:#FFFFFF;
+  border: none;
+  outline: none;
+  margin: 11px 4px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom:3px;
+}
+.selectionInfo{
+	font-family: Arial, sans-serif, Helvetica;
+	font-size:11px;
+	margin-bottom:5px;
+	margin-top:0;
+}
+.trvlFltr{
+	float:left;
+	width:158px;
+}
+.fltrHead{
+	border:1px solid #B1B3B6;
+	border-radius:6px;
+	cursor:pointer;
+	height:16px;
+	padding:4px 8px;
+} 
+.fltrTxt{
+	float:left;
+	height:14px;
+	padding-left:30px;
+	padding-top:4px;
+	width:50px;
+	cursor:pointer;
+}

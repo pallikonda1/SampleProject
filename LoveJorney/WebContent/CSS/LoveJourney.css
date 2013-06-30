@@ -50,6 +50,10 @@ li{
 	display:inline-block;
 }
 
+img{
+	cursor: pointer;
+}
+
 #wrapper- { width: 950px; margin: 0 auto;}
 #mainContainer{width: 950px;float:left;padding:0 10px;float:left;background-color:#FFFFFF;box-shadow:3px 6px 8px #888888;-moz-box-shadow:3px 6px 8px #888888;-webkit-box-shadow:3px 6px 8px #888888;}
 #header-{ float: left; width: 940px; margin:5px; display: block; clear: both; }
@@ -67,6 +71,22 @@ li{
 	font-size:11px;
 	width:auto;
 }
+.agentInfo{
+	background:url('/LoveJorney/Images/stickynotes.png') no-repeat;
+	height:147px;width:225px;float:right;font-family:arial;font-size:13px;font-weight:bold;margin-top:-11px;overflow:hidden;
+}
+.agentInfo ul{
+	margin-top:45px;margin-left:47px;
+}
+.agentLabel{
+	padding:5px;color:#000000;
+}
+.agentText{
+	color:#000000;
+	margin-left:5px;
+	padding:5px;
+}
+
 .cmmnSelect{
 	border:1px solid #ABADB3;
 	color:#6D6D6D;
@@ -377,4 +397,4 @@ h1{
 	font-size:13px;
 	margin:0 0 7px;
 	width:115px;
-}	
+}

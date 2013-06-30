@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="CSS/LoveJourney.css"/>
+<link rel="stylesheet" type="text/css" href="CSS/BusSearch.css"/>
+ <script src="JS/jquery-1.9.1.js"></script>
+ <script src="JS/ui/jquery.ui.core.js"></script>
+ <script src="JS/ui/jquery.ui.widget.js"></script>
+ <script src="JS/ui/jquery.ui.datepicker.js"></script>
+ <script  src="JS/Menuselection.js"></script>
+ <script  src="JS/js-image-slider.js"></script>
+ <link rel="stylesheet" href="CSS/demos.css">
+ <link rel="stylesheet" type="text/css" href="CSS/jquery-ui.css" />
+ <link rel="stylesheet" href="CSS/themes/base/jquery.ui.all.css">
+ <link href="CSS/js-image-slider.css" rel="stylesheet" type="text/css" />
+<link href="CSS/nice_menus.css" rel="stylesheet" type="text/css" />
+<link href="CSS/nice_menus_default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-color: #e8e8e8;
+}
+
+.ui-datepicker-trigger {
+	padding: 5px;
+	margin-top: 3px;
+	cursor:pointer;
+}
+</style>
+<script>
+function showModifySearch(){
+	var modSearch = document.getElementById("busInfo");
+	modSearch.style.display = "block";
+}
+
+
+</script>
+</head>
+
+
+<body>
+	<div id="wrapper-">
+		<div id="mainContainer">
+			<div id="header-">
+				<div style="width: 940px;">
+					<div style="float: left;">
+						<img src="Images/Lovejourney.png" alt="lovejourney"
+							title="lovejourney" />
+					</div>
+					<div style="float: left; margin-left: 233px; margin-top: 1px;">
+					<ul><li><img src="Images/Contact_us.png" alt="contact" title="contact"
+							height="30" /></li>
+							<li style="vertical-align: top;margin-top:7px;font-size:15px;font-family:arial; color: #1a75bc;"><strong>080-32561727/25202265</strong></li></ul>
+
+					</div>
+					<div style="float: right; margin-right: 25px; width: 130px;">
+						<ul>
+							<li class="commonFont" style="padding: 2px;">Follow us on</li>
+							<li><a href="#" style="padding: 2px;"><img
+									style="vertical-align: middle;" src="Images/facebook_New.png"
+									alt="Facebook" title="Facebook" height="20" /></a></li>
+							<li><a href="#" style="padding: 2px;"><img
+									style="vertical-align: middle;" src="Images/Twitter_New.png"
+									alt="Twitter" title="Twitter" height="20" /></a></li>
+						</ul>
+					</div>
+					<br /> <br />
+
+					<div style="float: right;margin-top:6px; margin-right: -13px; width: 130px;">
+						<ul>
+							<li><a href="#" class="headerOptions ">Print</a></li>
+							<li style="color:#1a75bc;">|</li>
+							<li><a href="#" class="headerOptions">Cancel</a></li>
+						</ul>
+					</div>
+
+					<br />
+					<div class="headerMenu" style="margin-top: 10px;float:none;text-align:right;">
+						<ul>
+							<li><a href="CommonRegistration.html" class="headerOptions ">Agent</a></li>
+							<li style="color:#1a75bc;">|</li>
+							<li><a href="BusBooking.html" class="headerOptions ">User</a></li>
+							<li style="color:#1a75bc;">|</li>
+							<li><a href="#" class="headerOptions">Employee</a></li>
+							<li style="color:#1a75bc;">|</li>
+							<li><a href="#" class="headerOptions">Corporate</a></li>
+						</ul>
+					</div>
+				</div>
+				<br /> <br />
+
+			</div>
+			    <div id="imageSelection" style="border: none;">
+			<div class="selectOption">
+				<img id="user_menu_map" src="Images/Menu_User.png"
+					usemap="#user_menu_map" border="0" width="940" height="62" alt="" />
+				<map id="_user_menu_map" name="user_menu_map">
+					<area shape="rect" coords="32,2,82,57" href="#" alt="Home"
+						title="Home" />
+					<area shape="rect" coords="122,2,172,57" href="#" alt="Buses"
+						title="Buses" />
+					<area shape="rect" coords="211,2,261,57" href="#" alt="Flights"
+						title="Flights" />
+					<area shape="rect" coords="306,2,356,57" href="#" alt="Hotels"
+						title="Hotels" />
+					<area shape="rect" coords="405,2,455,57" href="#" alt="Cars"
+						title="Cars" />
+					<area shape="rect" coords="497,2,547,57" href="#" alt="Tours"
+						title="Tours" />
+					<area shape="rect" coords="948,60,950,62" href="#" alt="Image Map"
+						title="Image Map" />
+				</map>
+			</div>
+		</div>
+			<div id="content-wrapper-">
+				
+				<div id="modifySearch">
+				 <div class="dfltSrchInfo">
+				  
+				  <div style="margin-top:5px;">
+				  <span>Banglore - Hyderabad</span>
+				  <span>25-06-2013</span>
+				  <span><input type="button" value="Modify Search" class="mdfyButton" onclick="showModifySearch();"></span>
+				  </div>
+				 <div style="margin-left:37px;margin-top:10px;display:none;" id="busInfo">
+				  <ul style="float:left;">
+				  <li class="busText" >From</li>
+				 <br/>
+				  <li style="padding-top:3px;"><input type="text" placeholder="Enter a city" style="padding:3px;"></li>
+				 </ul>
+				<ul style="float:left;">
+				  <li class="busText" >To</li>
+				 <br/>
+				  <li style="padding-top:3px;"><input type="text" placeholder="Enter a city" style="padding:3px;"></li>
+				 </ul>
+				 
+				 <ul style="float:left;">
+				  <li class="busText" >Date of Journey</li>
+				 <br/>
+				  <li style="padding-top:3px;"><input type="text" placeholder="dd-mmm-yyyy" style="padding:3px;"></li>
+				 </ul>
+				 
+				 <ul style="float:left;">
+				  <li><input type="submit" value="Search" class="searchButton"/></li>
+				</ul>
+				 </div>
+				 </div>
+				</div>
+				<div style="margin-left:36px;margin-top:10px;float:left;padding-bottom:10px;">
+		<div class="selectionInfo">
+		<div class="trvlFltr">
+		<div class="fltrHead">
+		<span class="fltrTxt">Travels</span>
+		<span class="arrow"></span>
+		</div>
+		</div>
+		<div class="trvlFltr" style="margin-left:10px;">
+		<div class="fltrHead">
+		<span class="fltrTxt">Travels</span>
+		<span class="arrow"></span>
+		</div>
+		</div>
+		<div class="trvlFltr" style="margin-left:10px;">
+		<div class="fltrHead">
+		<span class="fltrTxt">Travels</span>
+		<span class="arrow"></span>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div style="clear:both;margin-left:40px;padding-top:15px;border-top:1px dotted #1a75bc;border-bottom:1px dotted #1a75bc;">
+		
+		<div>
+		<ul>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Travel</a>
+		</li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Bus type</a></li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Depature</a></li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Arrival</a></li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Duration</a></li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Seats/Breaths</a></li>
+		<li style="width:125px;position:relative;top:-6px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">Fare</a></li>
+	</ul>
+		</div>
+		</div>
+		<div style="margin-left:40px;height:70px;">
+		<ul>
+		<li style="width:125px;margin-top:10px;"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">SVR Tours</a>
+		</li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">AC</a></li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">9.30</a></li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">6.30</a></li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">9</a></li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">8</a></li>
+		<li style="width:125px;margin-top:10px"><a href="#" style="text-decoration:none;font-family:Arial, sans-serif, Helvetica;font-size:13px;color:#000000;">950</a></li>
+		
+		</ul>
+		<ul>
+		<li style="float:right;margin-right:41px;"><input type="submit" value="Search" class="searchButton"/></li>
+		</ul>
+		</div>
+		
+		
+		</div>
+		
+
+	</div>
+	
+	</div>
+	
+</body>
+</html>
