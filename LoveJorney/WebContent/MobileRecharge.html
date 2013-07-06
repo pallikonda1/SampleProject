@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resister YourSelf</title>
+<link rel="stylesheet" type="text/css" href="CSS/commonRegistration.css" />
+<script src="JS/jquery-1.9.1.js"></script>
+<script src="JS/jquery-ui-1.10.3.custom.js"></script>
+<link rel="stylesheet" href="CSS/jquery-ui.tabs.css" />
+<link rel="stylesheet" href="CSS/demos.css" />
+</head>
+<script>
+$(function() {
+	$( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+	$( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+	});	
+	
+</script>
+<style type="text/css">
+ .ui-tabs-vertical { width: 55em; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+label,input{
+    padding:5px;
+    margin:5px;
+}
+
+</style>
+<body class="background">
+	
+		<div id="content">
+					<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Mobile</a><span style="vertical-align:sub;margin-left:33px;">img</span></li>
+<li><a href="#tabs-2">DTH</a><span style="vertical-align:sub;margin-left:45px;">img</span></li>
+<li><a href="#tabs-3">Data Card</a><span style="vertical-align:sub;margin-left:10px;">img</span></li>
+</ul>
+<div id="tabs-1">
+ <div>
+ <label>Mobile Number</label>
+ <input type="text" style="margin-left:20px" value="" name="">
+ </div>
+ <div>
+ <label>Service Provider</label>
+ <input type="text" name="" value="" style="margin-left:11px">
+ </div>
+<div>
+ <label>Amount</label>
+ <input type="text" name="" value="" style="margin-left:61px">
+ </div>
+ <div style="margin-left:35%;">
+ <input type="submit" value="Recharge it now"/>
+ </div>
+ 
+</div>
+<div id="tabs-2">
+<div>
+ <label>DTH Number</label>
+ <input type="text" value="" name="" style="margin-left:32px"/>
+ </div>
+ <div>
+ <label>Service Provider</label>
+ <input type="text" value="" name="" style="margin-left:11px"/>
+ </div>
+<div>
+ <label>Amount</label>
+ <input type="text" value="" name="" style="margin-left:61px"/>
+ </div>
+ <div style="margin-left:35%;">
+ <input type="submit" value="Recharge it now"/>
+ </div>
+</div>
+<div id="tabs-3">
+<div>
+ <label>DataCard Number</label>
+ <input type="text" value="" name="" style="margin-left:2px"/>
+ </div>
+ <div>
+ <label>Service Provider</label>
+ <input type="text" value="" name="" style="margin-left:11px"/>
+ </div>
+<div>
+ <label>Amount</label>
+ <input type="text" value="" name="" style="margin-left:61px"/>
+ </div>
+ <div style="margin-left:35%;">
+ <input type="submit" value="Recharge it now"/>
+ </div>
+ </div>
+</div>
+		</div>
+
+	
+</body>
+</html>

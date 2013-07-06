@@ -16,22 +16,42 @@
  <link href="CSS/js-image-slider.css" rel="stylesheet" type="text/css" />
 <link href="CSS/nice_menus.css" rel="stylesheet" type="text/css" />
 <link href="CSS/nice_menus_default.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+$(function(){
+	$('#domTab').click(function () {
+        $('#domTab').removeClass('dsel');
+        $(this).addClass('sel');
+        $('#intlTab').addClass('dsel');
+    });
+	$('#intlTab').click(function () {
+        $('#intlTab').removeClass('dsel');
+        $(this).addClass('sel');
+        $('#domTab').addClass('dsel');
+    });
+	});
+
+
+
+</script>
+
 <style type="text/css">
-body {
-	background-color: #e8e8e8;
-}
 
 .ui-datepicker-trigger {
 	padding: 5px;
 	margin-top: 3px;
 	cursor:pointer;
 }
+.background{
+	   background-color:#F6F6F5;
+	   background:url('/LoveJorney/Images/bgbody.png') 
+	}
 </style>
 
 </head>
 
 
-<body>
+<body class="background">
 	<div id="wrapper-">
 		<div id="mainContainer">
 			<div id="header-">
@@ -83,7 +103,8 @@ body {
 				<br /> <br />
 
 			</div>
-			    <div id="imageSelection" style="border: none;">
+			
+			   <div id="imageSelection" style="border: none;">
 			<div class="selectOption">
 				<img id="user_menu_map" src="Images/Menu_User.png"
 					usemap="#user_menu_map" border="0" width="940" height="62" alt="" />
@@ -104,7 +125,7 @@ body {
 						title="Image Map" />
 				</map>
 			</div>
-		</div>
+		</div> 
 			<div id="content-wrapper-">
 				<div id="sidebar-left-" style="width: 500px;">
 
@@ -112,12 +133,14 @@ body {
 						<h1>Plan My Travel</h1>
 						<div class="travelOption">
 							<div class="travelOptionBox">
+								
 								<ul>
-									<li><a href="#" style="width:200px;padding:5px 0 6px;">Domestic Travel</a></li>
-									<li><a href="#" style="width:200px;padding:5px 0 6px;">International Travel</a></li>
-								</ul>
+									<li id="domTab" class="sel" ><a href="#" >Domestic Travel</a></li>
+						            <li id="intlTab" class="dsel" ><a href="#" >International Travel</a></li>
+									</ul>
+							
 							</div>
-							<div class="bookingOptArea">
+							<div class="bookingOptArea" id="showSelectionArea">
 								<div class="prodOpt mt">
 									<ul>
 										<li class="slectionMenu"><span style="float: left">

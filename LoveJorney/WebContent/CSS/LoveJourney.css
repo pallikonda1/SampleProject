@@ -191,6 +191,64 @@ h1{
 .travelOptionBox{
 	float:left;width:auto;
 }
+.travelOptionBox ul li{
+	dispaly:inline;
+	float:left;
+	margin-right:10px;
+}
+.travelOptionBox ul li.sel{
+	background:url('../Images/tab_shadow.png') no-repeat scroll right bottom transparent;
+	padding:0 9px 0 0;
+}
+.travelOptionBox ul li.dsel{
+	
+	padding:0 9px 0 0;
+}
+.travelOptionBox ul li.sel a{
+	background-color: #FFFFFF;
+    color: #000000;
+    cursor: default;
+    margin-top: 7px;
+    padding: 8px 0;
+    position: relative;
+    text-decoration: none;
+    top: 1px;
+    width: 200px;
+    height:20px;
+    cursor:pointer;
+}
+.travelOptionBox ul li a{
+	background-color: #E4E4E4;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #000000;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+.travelOptionBox ul li.dsel a{
+	background-color: #E4E4E4;
+    background-position: 0 -115px;
+    background-repeat: repeat-x;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+    color: #747474;
+    margin-top: 12px;
+    padding: 5px 0 6px;
+    text-decoration: none;
+    width: 200px;
+    height:20px;
+    cursor:pointer;
+}
 .bookingOptArea{
 	background-color:#FFFFFF;
 	border:1px solid #D8D8D8;

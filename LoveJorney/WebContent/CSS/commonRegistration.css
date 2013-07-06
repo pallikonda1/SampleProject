@@ -225,6 +225,11 @@ html,body {
 			}
 		}
 		
+	.background{
+	   background-color:#F6F6F5;
+	   background:url('/LoveJorney/Images/bgbody.png') 
+	}	
+		
 	#content{
 		margin:0 auto;
         overflow:hidden;
